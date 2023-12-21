@@ -1,0 +1,70 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Bradley Hand, cursive;
+}
+
+body{
+	font-size: 30px;
+	overflow-x: hidden;
+	color: #fff;
+}
+
+header{
+	background-image:linear-gradient(rgba(55, 28, 28, 0.445),rgba(0, 0, 0, 0.701)), url('/static/images/slimming-2728331_1920.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;	
+	height: 0px;
+	clear: both;
+}
+.row{
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.main{
+	float: right;	
+	margin: 60px;
+
+}
+
+.main li{
+	display: inline-block;
+	list-style: none;	
+	margin-left: 40px;	
+}
+
+.main li a{
+	padding: 5px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+
+.main li a:hover{
+	border-bottom: 2px solid white;
+}
+
+.main1{
+	font-size: 20px;
+	padding-top: 150px;	
+	padding-left: 100px;
+
+}
+
+.color{
+	font-size: 60px;
+	animation: colorchange 1s infinite;
+	padding-top: 50px;
+}
+
+

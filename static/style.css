@@ -1,0 +1,109 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Bradley Hand, cursive;
+}
+
+body{
+	font-size: 30px;
+	overflow-x: hidden;
+	color: #fff;
+}
+header{
+	background-image:linear-gradient(rgba(55, 28, 28, 0.445),rgba(0, 0, 0, 0.701)), url('/static/images/slimming-2728331_1920.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;	
+	height: 0px;
+	clear: both;
+}
+.row{
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.main{
+	float: right;	
+	margin: 60px;
+
+}
+
+.main li{
+	display: inline-block;
+	list-style: none;	
+	margin-left: 40px;	
+}
+
+.main li a{
+	padding: 5px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+
+.main li a:hover{
+	border-bottom: 2px solid white;
+}
+.main_content{
+	width: 1600px;
+	position: absolute;
+	top: 50%;		
+	left: 55%;
+	transform: translate(-50% , -50%);
+}
+
+.h1{
+	font-size: 200%;
+	margin-bottom: 20px;
+	
+
+}
+
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	margin-top: 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+}
+
+.btn-btn1{
+	background-color: transparent;
+	color: pink;
+	margin-right: 15px;
+	border: 1px solid pink;
+
+}
+
+.btn-btn1:hover{
+	background-color: black;
+}
+
+.color{
+	animation: colorchange 1s infinite;
+}
+
+.main1{
+	margin: 60px;
+	padding-right: 100px;
+
+}
+
+@media only screen and (max-width: 1600px){
+	.main_content{
+		width: 100%;
+		padding: 0 2%;
+
+	}
+}

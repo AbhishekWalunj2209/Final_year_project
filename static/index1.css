@@ -1,0 +1,73 @@
+body {
+    margin: 20px;
+    background-image:linear-gradient(rgba(55, 28, 28, 0.142),rgba(0, 0, 0, 0.317)), url('/static/images/obese-boy-who-is-overweight-pink-background.jpg');
+    background-size: cover  ;
+    background-repeat: no-repeat;  
+    width: auto;
+    background-position: center;
+    font-size: 20px;
+}
+
+.container {
+    padding-left: 80px;
+    
+}
+
+h1 {
+
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    
+}
+
+
+
+button {
+    background-color: beige;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: teal;
+    color: white;
+}
+
+.submit-button {
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+
+input , ::placeholder{
+    padding-left: 5px;
+}
+
+label{
+    padding-right: 20px;
+    
+}
+
+select{
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 15px;
+    
+}

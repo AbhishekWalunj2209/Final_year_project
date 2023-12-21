@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>result</title>
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<ul class="main">
+					<li><a href="{{ url_for('home') }}">HOME</a></li>
+					<li><a href="{{ url_for('about') }}">ABOUT US</a></li>
+					<li><a href="{{ url_for('support') }}">SUPPORT</a></li>
+
+				</ul>
+			</div>
+		</nav>
+		<div class="main_content">
+		<h1>Obesity Estimation.</h1><br>
+		<h2>Your are : {{ predct }} </h2>
+		<h3>{{ obese }} </h3>
+		<h4>You can follow below preventions: </h4>
+		<p class="main1">{{ prediction }} </p> 
+		<h4>{{ bonus }}</h4>
+		</div>
+	</header>
+
+</body>
+</html>

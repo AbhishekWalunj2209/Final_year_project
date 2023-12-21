@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obesity Estimation</title>
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<ul class="main">
+					<li><a href="{{ url_for('home') }}">HOME</a></li>
+					<li><a href="{{ url_for('about') }}">ABOUT US</a></li>
+					<li><a href="{{ url_for('support') }}">SUPPORT</a></li>
+
+				</ul>
+			</div>
+		</nav>
+		<div class="main_content">
+		<h1>Obesity Estimation.</h1><br>
+		    <h3>Check yourself now <br>
+				with our machine learning model</h3>	
+		    <a href="{{ url_for('index1') }}" class="btn btn-btn1">Estimate Now</a>
+		    
+		</div>
+	</header>
+
+</body>
+</html>

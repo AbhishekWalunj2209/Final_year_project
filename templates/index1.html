@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimation Form</title>
+    <link rel="stylesheet" href="static/index1.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 id="head1">Estimation Form</h1>
+    <form action='/result' method="POST" class="form"  >
+    
+        <div>
+            <label for="Age">Age:  </label>
+            <input type="number" placeholder="Age" id="Age" name="Age" style="height: 20px; border-radius: 10px;">
+        </div>
+        <br>
+
+        
+   
+        <div>
+            <label>Gender:</label>
+            Male <input type="radio" name="Gender" id="Male" value="Male" required>
+            Female <input type="radio" name="Gender" id="Female" value="female" required>
+          
+            
+        </div>
+        <br>
+
+        <div>
+            <label>Family history of obesity?:</label>
+            Yes <input type="radio" name="family_history_with_overweight" id="family_history_with_overweight" value="family_history_with_overweight_yes" required>
+            No <input type="radio" name="family_history_with_overweight" id="family_history_with_overweight" value="family_history_with_overweight_no" required>
+          
+            
+        </div>
+        <br>
+
+        <div>
+            <label>Do you eat high calorie food:</label>
+            Yes <input type="radio" name="FAVC" id="FAVC" value="FAVC_yes" required>
+            No <input type="radio" name="FAVC" id="FAVC" value="FAVC_no" required>
+          
+            
+        </div>
+        <br>
+        <div>
+            <label for="FCVC">Do you usualy eat vegetables in your meal?:</label>
+            <select id="FCVC" name="FCVC">
+            <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <br>
+
+         
+        <!-- Add more questions as needed -->
+        <div>
+            <label for="NCP">How many meals you have daily?:</label>
+            <select id="NCP" name="NCP">
+            <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <br>
+        
+        <!-- Add more questions as needed -->
+
+        <div>
+            <label>Do you eat any food between meals?:</label>
+            No <input type="radio" name="CAEC" id="CAEC" value="CAEC_no" required>
+            Sometimes <input type="radio" name="CAEC" id="CAEC" value="CAEC_sometimes" required>
+            Frequently <input type="radio" name="CAEC" id="CAEC" value="CAEC_frequently" required>
+            Always <input type="radio" name="CAEC" id="CAEC" value="CAEC_always" required>
+        </div>
+        <br>
+
+
+        <div>
+            <label>Do you smoke?:</label>
+            Yes <input type="radio" name="SMOKE" id="SMOKE" value="SMOKE_yes" required>
+            No <input type="radio" name="SMOKE" id="SMOKE" value="SMOKE_no" required>
+        </div>
+        <br>
+
+
+        <div>
+            <label for="CH2O">How much litres of water you drink daily?:</label>
+            <select id="CH2O" name="CH2O">
+            <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <br>
+
+        
+        <div>
+            <label>Do you monitor the calorie you eat daily?:</label>
+            Yes <input type="radio" name="SCC" id="SCC" value="SCC_yes" required>
+            No <input type="radio" name="SCC" id="SCC" value="SCC_no" required>
+        </div>
+        <br>
+
+
+        <div>
+            <label for="FAF">How often do you have physical activity?:</label>
+            <select id="FAF" name="FAF">
+                <option selected>Choose...</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="TUE">How much time do you use digital device?:</label>
+            <select id="TUE" name="TUE">
+                <option selected>Choose...</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label>How often do you drink alcohol?:</label>
+            No <input type="radio" name="CALC" id="CALC" value="CALC_no" required>
+            Sometimes <input type="radio" name="CALC" id="CALC" value="CALC_sometimes" required>
+            Frequently <input type="radio" name="CALC" id="CALC" value="CALC_frequently" required>
+            Always <input type="radio" name="CALC" id="CALC" value="CALC_always" required>
+        </div>
+        <br>
+
+
+        <div>
+            <label for="MTRANS">What mode of transportation do you usually use?:</label>
+            <select id="MTRANS" name="MTRANS">
+                <option selected>Choose...</option>
+                <option value="1">Automobile</option>
+                <option value="2">Motorbike</option>
+                <option value="3">Bike</option>
+                <option value="4">Public_Trasportation</option>
+                <option value="5">Walking</option>
+            </select>
+        </div>
+        <br>
+
+
+    
+        <!-- Add more questions as needed -->
+
+        <div class="submit-button">
+            <!-- <a href="{{ url_for('result') }}"> -->
+                <button type="submit"><b>Submit</b></button>
+            <!-- </a> -->
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

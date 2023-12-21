@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="static/index1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="index1.css">
+  <title>Fill Details</title>
+</head>
+<body>
+      
+       <div class="container-md position-relative mt-5" >
+         <h1 class="text-center col-sm-10 " id="head1">Estimation Form</h1>
+
+         <form action='/result' method="POST" class="form mt-5">
+          
+          <div class="mb-3 row">
+            <label for="Age" class="col-sm-2 col-form-label">Age</label>
+            <div class="col-sm-5">
+              <input type="number" class="form-control" placeholder="Age" id="Age" name="Age" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="Height" class="col-sm-2 col-form-label">Height</label>
+            <div class="col-sm-5">
+              <input type="number" placeholder="Height" id="Height" name="Height" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="Weight" class="col-sm-2 col-form-label">Weight</label>
+            <div class="col-sm-5">
+              <input type="number" placeholder="Weight" id="Weight" name="Weight" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="Gender" class="col-sm-2 col-form-label">Gender</label>
+            <div class="col-sm-10">
+              Male <input type="radio"  name="Gender" id="Male" value="Male" style="margin-right:30px;" required>
+              Female <input type="radio"  name="Gender" id="Female" value="Female" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="q1" class="col-sm-2 col-form-label">Has any of family members suffered from obesity?</label>
+            <div class="col-sm-10">
+              <input type="radio"  name="yes"><label for="Yes" style="margin-right: 30px;">Yes</label>  
+              <input type="radio"  name="yes"><label for="No">No</label>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="branch" class="col-sm-2 col-form-label">Do you eat high calorie food frequently?</label>
+            <div class="col-sm-10">
+              <input type="radio"   name="calorie"><label for="Yes" style="margin-right: 30px;">Yes</label>  
+              <input type="radio"   name="calorie"><label for="No">No</label>
+            </div>
+          </div>
+
+
+          <div class="mb-3 row">
+            <label for="inputState" class="col-sm-2 col-form-label" id="lbl">How frequently do you eat vegetables in your meals?</label>
+            <div class="col-sm-2">
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+          </div>
+          
+        
+          
+          <div>
+            <label for="meals">How many meals you have daily?:</label>
+            <select id="meals" name="meals">
+            <option selected>Choose...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <br>
+
+          <!-- <div class="flex justify-center">
+            <a href="index2.html">
+              <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Next
+              </a>
+             </div> -->
+
+             
+          <div class >
+                <div class="mb-3 row">
+               <label for="q5" class="col-sm-2 col-form-label">Do you eat any food between meals?</label>
+               <div class="col-sm-10">
+                 <input type="radio"   name="food"><label for="male" style="margin-right: 30px;">No</label> 
+                 <input type="radio"   name="food"><label for="male" style="margin-right: 30px;">Sometimes</label> 
+                 <input type="radio"   name="food"><label for="male" style="margin-right: 30px;">Frequently</label>
+                 <input type="radio"  name="food"><label for="female">Always</label>
+               </div>
+             </div>
+   
+             <div class="mb-3 row">
+               <label for="q6" class="col-sm-2 col-form-label">Do you smoke?</label>
+               <div class="col-sm-10">
+                 <input type="radio"   name="smoke"><label for="male" style="margin-right: 30px;">Yes</label>  
+                 <input type="radio"  name="smoke"><label for="female">No</label>
+               </div>
+             </div>
+   
+             
+             <div class="mb-3 row">
+              <label for="inputState2" class="col-sm-2 col-form-label" id="lbl1">How much litres of water do you drink daily?</label>
+              <div class="col-sm-2">
+                <select id="inputState2" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </div>
+   
+             <div class="mb-3 row">
+               <label for="q7" class="col-sm-2 col-form-label">Do you monitor the calories you eat daily?</label>
+               <div class="col-sm-10">
+                 <input type="radio"   name="monitor"><label for="male" style="margin-right: 30px;">Yes</label>  
+                 <input type="radio"  name="monitor"><label for="female">No</label>
+               </div>
+             </div>
+             
+             <div class="mb-3 row">
+              <label for="inputState3" class="col-sm-2 col-form-label" id="lbl1">How many hours do you do physical activity??</label>
+              <div class="col-sm-2">
+                <select id="inputState3" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </div>
+             
+
+             <div class="mb-3 row">
+              <label for="inputState4" class="col-sm-2 col-form-label" id="lbl1">How much time do you use digital devices?</label>
+              <div class="col-sm-2">
+                <select id="inputState4" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>0</option>
+                  <option>1 hour</option>
+                  <option>2 hours</option>
+                  
+                </select>
+              </div>
+            </div>
+
+             <div class >
+              <div class="mb-3 row">
+             <label for="q5" class="col-sm-2 col-form-label">How often do you drink alcohol??</label>
+             <div class="col-sm-10">
+               <input type="radio"   name="drink"><label for="male" style="margin-right: 30px;">No</label> 
+               <input type="radio"   name="drink"><label for="male" style="margin-right: 30px;">Sometimes</label> 
+               <input type="radio"   name="drink"><label for="male" style="margin-right: 30px;">Frequently</label>
+               <input type="radio"  name="drink"><label for="female">Always</label>
+             </div>
+           </div>
+
+   
+             <div class="mb-3 row">
+               <label for="q7" class="col-sm-2 col-form-label">What mode of transportation do you usually use?</label>
+               <div class="grid col-sm-10">
+                 <input type="radio" name="transportation" ><label for="male" style="margin-right: 30px;">Automobile</label>
+                 <input type="radio" name="transportation" ><label for="male" style="margin-right: 30px;">Motorbike</label> 
+                 <input type="radio" name="transportation" ><label for="male" style="margin-right: 30px;">Bike</label> 
+                 <input type="radio" name="transportation" ><label for="male" style="margin-right: 30px;">Public transportation</label>   
+                 <input type="radio"  name="transportation"><label for="female">Walking</label>
+               </div>
+             </div>
+   
+             <div class="col-sm-5 mt-3 position-absolute top-100 start-50 translate-middle">
+              <a href="{{ url_for('result') }}">
+                <button type= "button" class="btn">Submit </button>
+                </a>
+              </div>
+
+          </div>  
+      </div>  
+   
+      
+  
+         </form>
+        
+
+       </div>
+</body>
+</html>
